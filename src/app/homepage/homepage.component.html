@@ -1,0 +1,14 @@
+<table class="results-table">
+    <tr>
+        <td>Name</td>
+        <td>URL</td>
+    </tr>
+    <tr *ngFor="let url of urls; let i = index">
+        <td>{{ urls[i]['name'] }}</td>
+        <td> 
+            <a href={{getUrl(i)}} target="_blank"> {{getUrl(i)}} </a>
+        </td>
+    </tr>
+</table>
+
+
